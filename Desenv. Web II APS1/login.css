@@ -1,0 +1,70 @@
+:root{
+    --blue-dark: #1c2e35;
+    --blue-dark-secondary: #172447;
+    --blue: #298bf6;
+    --blue-hover: rgba(41, 139, 246,.6);
+    --font-primary: 'DM Serif Text', serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
+.area-login{
+    background-color: var(--blue-dark);
+    padding: 0 40px;
+}
+
+.logo{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.area-login form{
+    width: 100%;
+}
+
+.area-login form input, button {
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.area-login form input{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.area-login form p{
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1.13rem;
+    font-family: var(--font-secondary);
+}
+
+.btn-login{
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 8px;
+}
+
+.area-desenho{
+    margin: 0;
+    padding: 0;
+}
+
+.desenho{
+    width: 90%;
+}
+
+@media(min-width: 1240px){
+    body{
+        overflow:hidden;
+    }
+
+    .desenho{
+        position: relative;
+        top: -5%;
+    }
+}
