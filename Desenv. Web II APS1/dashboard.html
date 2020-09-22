@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="template.css">
+    <!-- Font: -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome: -->
+    <script src="https://kit.fontawesome.com/909832e6d4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <title>3Ms - Dashboard</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <img class="logo-header" src="./imagens/3m-logo.png" alt="">
+            <span class="user-group">
+                <a href="login.html"><i class="fas fa-power-off"></i></a>
+                <h3 class="user">Olá, Nome</h3>
+            </span>
+        </div>
+        <div class="content">
+            <h2 class="title">Funcionários</h2>
+            <div class="search-tools">
+                <div class="group-search">
+                    <input type="text" placeholder="CPF">
+                    <button class="button-search btn-search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="group-search">
+                    <input type="text" placeholder="Nome">
+                    <button class="button-search btn-search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="group-search">
+                    <a href="register.html"><button class="button-search btn-new">Novo</button></a>
+                </div>
+            </div>
+            <div class="area-content">
+                <div class="area-table">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">CPF</th>
+                                <th scope="col">Cargo</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Micael</th>
+                                <td>111.111.111-11</td>
+                                <td>Master</td>
+                                <td>
+                                    <div class="group-actions">
+                                        <button class="action act-view">
+                                            <a href="history.html"><i class="fas fa-clock"></i></a>
+                                        </button>
+                                        <button class="action act-edit">
+                                            <a href="register.html"><i class="fas fa-user-edit"></i></a>
+                                        </button>
+                                        <button class="action act-delete">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Matheus</th>
+                                <td>222.222.222-22</td>
+                                <td>Funcionário</td>
+                                <td>
+                                    <div class="group-actions">
+                                        <button class="action act-view">
+                                            <a href="history.html"><i class="fas fa-clock"></i></a>
+                                        </button>
+                                        <button class="action act-edit">
+                                            <a href="register.html"><i class="fas fa-user-edit"></i></a>
+                                        </button>
+                                        <button class="action act-delete">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Messias</th>
+                                <td>333.333.333-33</td>
+                                <td>Funcionário</td>
+                                <td>
+                                    <div class="group-actions">
+                                        <button class="action act-view">
+                                            <a href="history.html"><i class="fas fa-clock"></i></a>
+                                        </button>
+                                        <button class="action act-edit">
+                                            <a href="register.html"><i class="fas fa-user-edit"></i></a>
+                                        </button>
+                                        <button class="action act-delete">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="area-chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <footer>
+           Feito por Micael Riboura, Matheus Dias e Messias Barreto
+        </footer>
+    </div>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="chart.js"></script>
+</body>
+
+</html>

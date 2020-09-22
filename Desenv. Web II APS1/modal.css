@@ -1,0 +1,41 @@
+.caixa{
+    padding: 20px;
+    background-color: var(--blue-dark);
+    color: #fff;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.caixa form{
+    width: 100%;
+    text-align: center;
+}
+
+.caixa form input, button {
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.master{
+    text-decoration:underline !important;
+}
+
+.caixa form input{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.caixa form p{
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1.13rem;
+    font-family: var(--font-secondary);
+}
+
+.modal-logo{
+    width: 100%;
+}

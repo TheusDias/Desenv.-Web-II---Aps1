@@ -1,18 +1,10 @@
-:root{
-    --blue-dark: #1c2e35;
-    --blue-dark-secondary: #172447;
-    --blue: #298bf6;
-    --blue-hover: rgba(41, 139, 246,.6);
-    --font-primary: 'DM Serif Text', serif;
-    --font-secondary: 'Montserrat', sans-serif;
-}
 
 .area-login{
     background-color: var(--blue-dark);
     padding: 0 40px;
 }
 
-.logo{
+.logo-login{
     width: 100%;
     margin-top: 100px;
 }
